@@ -3,67 +3,81 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style_3.css">
+	<link rel="stylesheet" type="text/css" href="style_3.css" id="linkChange">
 </head>
 <body>
-<div class="main">
-	<div class="title">
-		<p class="title1">简历</p>
+	<div class="button-unit">
+		<button onclick="clickChnage(1)" class="change-button">点我变朴素蟹蟹</button>
+		<button onclick="clickChnage(2)" class="change-button">点我变漂亮蟹蟹</button>
+		<button onclick="clickChnage(3)" class="change-button">点我变复古蟹蟹</button>
 	</div>
-	<ul>
-		<li class="basicInfo">
-			<p class="title2">基本信息</p>
-			<p class="content">
-				<span class="fontBold">姓名</span>
-				<span class="right">张三</span>
-				<span class="fontBold">性别</span>
-				<span class="right">男</span>
-				<span class="fontBold">应聘职位</span>
-				<span class="right">Web前端工程师</span>
-			</p>
-		</li>
-		<li>
-			<p class="title2">联系方式</p>
-			<div class="content"><span class="fontBold">手机</span>
-				<span class="right">123123412345</span>
-				<span class="fontBold">Email</span>
-				<span class="right"><a 	href="">765422452@qq.com</a></span>
-				<span class="fontBold">个人主页</span>
-				<span class="right"><a href="">Github</a></span>
-			</div>
-		</li>
-		<li>
-			<p class="title2">能力描述</p>
-			<div class="content">
-				<p class="fontBold">技能能力</p>
-				<p>熟练掌握HTML、CSS、JavaScript</p>
-				<p class="fontBold">综合能力</p>
-				<p>良好的沟通，主动积极，努力勤奋</p>
-			</div>
-		</li>
-		<li>
-			<p class="title2">教育经历</p>
-			<div class="content">
-				<p class="fontBold">本科</p>
-				<p>百度前端技术学院小薇学院</p>
-
-				<p class="fontBold">研究生</p>
-				<p>百度前端技术学院大斌学院</p>
-			</div>
-		</li>
-		<li>
-			<p class="title2">项目经历</p>
-			<div class="content">
-				<p class="fontBold">小度小度</p>
-				<p>作为前端工程师角色参与了ABC组件的开发</p>
-
-				<p class="fontBold">SAN Doc</p>
-				<p>作为文档工程师参与了SAN Doc编写</p>
-			</div>
-		</li>
-	</ul>
-</div>
+	<div class="main">
+		<div class="title">
+			<p class="title1">简历</p>
+		</div>
+		<ul>
+			<li class="basicInfo">
+				<p class="title2"><span>基本信息</span></p>
+				<p class="content">
+					<span class="fontBold margin-top">姓名</span>
+					<span class="right">张三</span>
+					<span class="fontBold">性别</span>
+					<span class="right">男</span>
+					<span class="fontBold">应聘职位</span>
+					<span class="right">Web前端工程师</span>
+				</p>
+			</li>
+			<li>
+				<p class="title2">联系方式</p>
+				<div class="content">
+					<span class="fontBold margin-top">手机</span>
+					<span class="right">123123412345</span>
+					<span class="fontBold">Email</span>
+					<span class="right"><a 	href="">765422452@qq.com</a></span>
+					<span class="fontBold">个人主页</span>
+					<span class="right"><a href="">Github</a></span>
+				</div>
+			</li>
+			<li>
+				<p class="title2">能力描述</p>
+				<div class="content">
+					<p class="fontBold margin-top">技能能力</p>
+					<p>熟练掌握HTML、CSS、JavaScript</p>
+					<span class="block">
+						<p class="fontBold">综合能力</p>
+						<p>良好的沟通，主动积极，努力勤奋</p>
+					</span>
+				</div>
+			</li>
+			<li>
+				<p class="title2">教育经历</p>
+				<div class="content">
+					<p class="fontBold margin-top">本科</p>
+					<p>百度前端技术学院小薇学院</p>
+					<span class="block">
+						<p class="fontBold">研究生</p>
+						<p>百度前端技术学院大斌学院</p>
+					</span>
+				</div>
+			</li>
+			<li>
+				<p class="title2">项目经历</p>
+				<div class="content">
+					<p class="fontBold margin-top">小度小度</p>
+					<p>作为前端工程师角色参与了ABC组件的开发</p>
+					<span class="block">
+						<p class="fontBold">SAN Doc</p>
+						<p>作为文档工程师参与了SAN Doc编写</p>
+					</span>
+				</div>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
-<style>
-</style>
+<script>
+	function clickChnage(changeStyle){
+		var oLink = document.getElementById('linkChange');
+		oLink.href = 'style_'+ changeStyle + '.css';
+	}
+</script>
