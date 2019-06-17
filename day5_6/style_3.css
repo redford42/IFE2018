@@ -1,0 +1,43 @@
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+}
+.title{
+    height: 50px;
+    background-color: grey;
+    display: flex;
+}
+.title1{
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 16px;
+    color: #ffffff;
+}
+li{
+    display: flex;
+    flex-grow: 2;
+}
+.title2{
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    display: inline-block;
+    border-bottom: 1px white solid;
+}
+p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    border-bottom: 0.5px grey solid;
+    height: 100px;
+    width:100%;
+    border-right: 0.5px grey solid;
+    display: block;
+}

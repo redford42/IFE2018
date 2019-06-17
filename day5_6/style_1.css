@@ -7,10 +7,18 @@
 	padding-bottom: 0;
 }
 .title1{
-	 font-size: 2.0rem;
-	 font-weight: 900;
+	font-size: 2.0rem;
+	font-weight: 900;
+	margin-top: 0;
+	padding-top: 0;
 }
+
 .title2{
 	font-size: 1.5rem;
 	font-weight: 900;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
 }
