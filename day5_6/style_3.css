@@ -28,16 +28,45 @@ li{
     background-color: darkgrey;
     display: inline-block;
     border-bottom: 1px white solid;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 900;
 }
-p{
+p {
     display: inline-block;
     margin: 0;
-    padding: 0;
 }
 .content{
+    padding-left: 5px;
     border-bottom: 0.5px grey solid;
     height: 100px;
     width:100%;
     border-right: 0.5px grey solid;
     display: block;
+}
+.fontBold{
+    font-weight: 900;
+    padding-bottom: 0;
+    display: inline-block;
+}
+.right{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.block{
+    display:block;
+}
+.margin-top{
+    margin-top: 15px;
+}
+.change-button{
+    border-radius: 5px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: #ffffff;
+}
+.button-unit{
+    float: right;
+    opacity: 0.6;
 }
