@@ -17,6 +17,9 @@
 	font-size: 1.5rem;
 	font-weight: 900;
 }
+body{
+	margin: 0;
+}
 ul{
 	list-style-type: none;
 	padding: 0px;
@@ -28,10 +31,9 @@ ul{
 	height: 50px;
 	width: 100px;
 	background-color: #ffffff;
-	margin-top: -8px;
-	margin-right: -8px;
 }
 .button-unit{
 	float: right;
 	opacity: 0.6;
 }
+
